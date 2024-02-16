@@ -91,17 +91,28 @@ li {
 	margin: 0 10% 10% 60%;
 	line-height: 30px;
 	text-align: justify;
-	padding: 20px;
 }
 
 .hero li {
 	background-color: var(--clr-primary);
 	border-radius: 20px;
-	padding: 10px;
-	margin-left: 2%;
+	padding: 4%;
+	margin-left: 6%;
 }
 
 /* About */
+.about{
+	background-color: var(--clr-primary);
+}
+.highlight {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 0px;
+	margin: 5%;
+}
+
 
 /* Seasons */
 .seasons {
@@ -112,6 +123,12 @@ li {
 	grid-row-gap: 10px;
 }
 
+h2 {
+	font-size: 40px;
+	color: var(--clr-ff);
+	margin: 2%;
+	font-weight: bold;
+}
 
 /* videos */
 .videos {
@@ -168,13 +185,6 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
 blockquote,
 pre,
 a,
@@ -207,9 +217,6 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -242,11 +249,8 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
