@@ -88,7 +88,7 @@ li {
 
 .hero__text {
 	display: flex;
-	margin: 0 10% 10% 60%;
+	margin: 0 10% 0 60%;
 	line-height: 30px;
 	text-align: justify;
 }
@@ -101,18 +101,35 @@ li {
 }
 
 /* About */
-.about{
-	background-color: var(--clr-primary);
-}
+
 .highlight {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr;
 	grid-column-gap: 20px;
 	grid-row-gap: 0px;
-	margin: 5%;
+	background-color: var(--clr-primary);
+	text-align: center;
+	padding: 2%;
+	& h3{
+		margin:0 58%;
+	}
+	
 }
 
+.conections {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+
+}
+
+.about__extra{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
 
 /* Seasons */
 .seasons {
@@ -131,11 +148,15 @@ h2 {
 }
 
 /* videos */
+.video{
+	background-color: var(--clr-secondary);
+	margin:0;
+}
 .videos {
 	display: flex;
 	margin: 2%;
 	gap: 2%;
-	background-color: var(--clr-secondary);
+	justify-content: center;
 }
 
 /* cast */
