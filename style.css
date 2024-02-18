@@ -88,7 +88,7 @@ li {
 
 .hero__text {
 	display: flex;
-	margin: 0 10% 0 60%;
+	margin: 0 10% 5% 60%;
 	line-height: 30px;
 	text-align: justify;
 }
@@ -136,8 +136,13 @@ li {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 10px;
+	grid-column-gap: 100px;
 	grid-row-gap: 10px;
+	margin:5%;
+}
+
+.season{
+	background-color: var(--clr-primary);
 }
 
 h2 {
@@ -145,6 +150,12 @@ h2 {
 	color: var(--clr-ff);
 	margin: 2%;
 	font-weight: bold;
+}
+
+.season__call{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 /* videos */
