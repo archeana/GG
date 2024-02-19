@@ -111,10 +111,11 @@ li {
 	background-color: var(--clr-primary);
 	text-align: center;
 	padding: 2%;
-	& h3{
-		margin:0 58%;
+
+	& h3 {
+		margin: 0 58%;
 	}
-	
+
 }
 
 .conections {
@@ -125,7 +126,7 @@ li {
 
 }
 
-.about__extra{
+.about__extra {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -138,10 +139,10 @@ li {
 	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 100px;
 	grid-row-gap: 10px;
-	margin:5%;
+	margin: 5%;
 }
 
-.season{
+.season {
 	background-color: var(--clr-primary);
 }
 
@@ -152,17 +153,18 @@ h2 {
 	font-weight: bold;
 }
 
-.season__call{
+.season__call {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 
 /* videos */
-.video{
+.video {
 	background-color: var(--clr-secondary);
-	margin:0;
+	margin: 0;
 }
+
 .videos {
 	display: flex;
 	margin: 2%;
@@ -203,6 +205,53 @@ h2 {
 	margin-right: 1rem;
 	background-color: var(--clr-char-m);
 }
+
+/* extras */
+.row {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 9px;
+	background-color: var(--clr-primary);
+	margin: 2%;
+}
+
+.card__extra {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	border: 1px solid #96311B;
+	border-radius: 0.6rem;
+}
+
+.card-content {
+	display: flex;
+	justify-items: center;
+	gap: 10px;
+	padding: 2%;
+	margin: 2%;
+}
+
+.similar-show {
+
+	background-color: var(--clr-primary);
+}
+
+.similarsh {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 9px;
+	
+	margin: 2%;
+}
+
+.container__shows{
+	border: 1px solid var(--clr-extra);
+	border-radius: 20%;
+	padding: 2%;
+}
+
+/* similar shows */
 
 /* reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
