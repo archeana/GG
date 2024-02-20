@@ -36,7 +36,7 @@ li {
 	list-style: none;
 	display: flex;
 	justify-content: space-evenly;
-	gap: 1rem;
+	gap: 2rem;
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
@@ -139,17 +139,22 @@ li {
 	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 100px;
 	grid-row-gap: 10px;
-	margin: 5%;
+	margin: 0 5%;
 }
 
-.season {
+#season {
 	background-color: var(--clr-primary);
+}
+
+#season h1 {
+	background-color: var(--clr-primary);
+	margin-left: 4%;
+	padding-top: 2%;
 }
 
 h2 {
 	font-size: 40px;
 	color: var(--clr-ff);
-	margin: 2%;
 	font-weight: bold;
 }
 
@@ -161,18 +166,40 @@ h2 {
 
 /* videos */
 .video {
-	background-color: var(--clr-secondary);
+	/* background-color: var(--clr-secondary); */
 	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.video,
+.extras,
+.similar-show h1 {
+	margin-left: 4%;
+	padding-top: 2%;
 }
 
 .videos {
-	display: flex;
-	margin: 2%;
-	gap: 2%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
 	justify-content: center;
+	justify-items: center;
 }
 
+
+
 /* cast */
+
+.cast {
+	background-color: var(--clr-primary);
+	margin: 0;
+}
+
+.cast h1 {
+	margin-left: 4%;
+	padding-top: 2%;
+}
 
 .cast_container {
 	display: grid;
@@ -180,7 +207,6 @@ h2 {
 	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 9px;
 	grid-row-gap: 9px;
-	margin: 2%;
 	background-color: var(--clr-primary);
 }
 
@@ -210,30 +236,43 @@ h2 {
 .row {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-column-gap: 9px;
-	background-color: var(--clr-primary);
-	margin: 2%;
+	grid-column-gap: 12px;
+	
+	justify-content: center;
+	justify-items:center;
 }
-
+.card-extraimage-container {
+	background-color: white;
+	
+}
 .card__extra {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-around;
-	border: 1px solid #96311B;
 	border-radius: 0.6rem;
+	height: 296px;
+	width: 249px;
+	background-color: var(--clr-cards);
 }
 
 .card-content {
 	display: flex;
 	justify-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	gap: 10px;
-	padding: 2%;
-	margin: 2%;
 }
 
-.similar-show {
+.card-content a{
+	margin-left: 70%;
 
+}
+
+/* similar shows */
+
+.similar-show {
 	background-color: var(--clr-primary);
 }
 
@@ -241,17 +280,59 @@ h2 {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-column-gap: 9px;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+}
+
+.container__shows {
+	background-color: var(--clr-extra);
+	border-radius: 20px;
+	height: 120px;
+	width: 187px;
+	margin-bottom: 12%;
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.container__shows h3 {
+	color: var(--clr-primary);
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+/* show */
+
+
+.show {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom:2%;
+}
+
+.show h2 {
+	font-size: 30px;
+	color: black;
+}
+
+.developer {
+	background-color: var(--clr-extra);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.developer h2{
+	font-size: 30px;
+	color: var(--clr-primary);
+
 	
-	margin: 2%;
 }
-
-.container__shows{
-	border: 1px solid var(--clr-extra);
-	border-radius: 20%;
-	padding: 2%;
-}
-
-/* similar shows */
 
 /* reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
