@@ -30,3 +30,15 @@ localStorage.setItem("page_view", visitCount);
 
 // Display the visit count in the counter container
 document.querySelector(".website-counter").textContent = visitCount;
+
+
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});

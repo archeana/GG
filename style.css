@@ -38,9 +38,23 @@ li {
 	justify-content: space-evenly;
 	gap: 2rem;
 	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: var(--clr-ff);
+    transition: .3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: var(--clr-extra)/* Add hover color */;
+}
 
 #topBtn {
 	background-color: var(--clr-secondary);
