@@ -37,23 +37,25 @@ li {
 	display: flex;
 	justify-content: space-evenly;
 	gap: 2rem;
-	margin-top: 2%;
+	margin-top: 1%;
 	margin-bottom: 1%;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: var(--clr-ff);
-    transition: .3s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    display: inline-block;
+nav a {
+	text-decoration: none;
+	color: var(--clr-ff);
+	transition: .3s;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	display: inline-block;
 }
 
 nav ul li a:hover {
-    color: var(--clr-extra)/* Add hover color */;
+	color: var(--clr-extra)
+		/* Add hover color */
+	;
 }
 
 #topBtn {
@@ -180,11 +182,11 @@ nav ul li a:hover {
 	margin: 0 5%;
 }
 
-#season {
+.season_s {
 	background-color: var(--clr-primary);
 }
 
-#season h1 {
+.season_s h1 {
 	background-color: var(--clr-primary);
 	margin-left: 4%;
 	padding-top: 2%;
@@ -396,18 +398,17 @@ h2 {
 .developer h2 {
 	font-size: 20px;
 	color: var(--clr-primary);
+}
 
-	& a {
-		text-decoration: none;
-		color: var(--clr-primary);
-		font-size: smaller;
-
-	}
+.developer a {
+	text-decoration: none;
+	color: var(--clr-primary);
+	font-size: smaller;
 }
 
 /* count visits */
 
-.contv{
+.contv {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -415,6 +416,7 @@ h2 {
 	background-color: var(--clr-extra);
 	color: #fff;
 }
+
 .website-counter {
 	height: 50px;
 	width: 80px;
