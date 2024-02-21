@@ -58,6 +58,34 @@ nav ul li a:hover {
 	;
 }
 
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 767px) {
+	nav ul {
+		flex-direction: column;
+		/* Stack the navigation links vertically */
+	}
+
+	nav li {
+		margin: 5px 0;
+		/* Add some space between the stacked navigation links */
+	}
+}
+
+/* For screens larger than 768px (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+	nav ul {
+		flex-direction: row;
+		/* Display the navigation links horizontally */
+	}
+
+	nav li {
+		margin: 0 10px;
+		/* Add some space between the horizontal navigation links */
+	}
+}
+
+
+/* top button */
 #topBtn {
 	background-color: var(--clr-secondary);
 	display: none;
@@ -140,6 +168,55 @@ nav ul li a:hover {
 	margin-left: 6%;
 }
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+	.hero {
+		height: auto;
+		/* Adjust height to fit content */
+		padding: 20px;
+		/* Add padding to the hero section */
+	}
+
+	.hero h1 {
+		font-size: 3rem;
+		/* Decrease font size of the heading */
+		margin-top: 30px;
+		/* Adjust margin for smaller screens */
+	}
+
+	.hero__text {
+		margin: 20px 0;
+		/* Adjust margin for smaller screens */
+		max-width: 100%;
+		/* Set maximum width to full width */
+	}
+
+	.ratings {
+		margin-right: 0;
+		/* Remove right margin */
+	}
+
+	.tags {
+		margin-right: 0;
+		/* Remove right margin */
+	}
+
+	.hero li {
+		margin-left: 0;
+		/* Remove left margin */
+	}
+}
+
+/* Media query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+	/* Add styles for screens between 768px and 1023px if needed */
+}
+
+/* Media query for screens larger than 1023px */
+@media (min-width: 1024px) {
+	/* Add styles for screens larger than 1023px if needed */
+}
+
 /* About */
 
 .highlight {
@@ -204,6 +281,81 @@ h2 {
 	justify-content: space-around;
 }
 
+
+/* Default styles for the season section */
+.season_s {
+	background-color: var(--clr-primary);
+	padding: 20px;
+	/* Add padding for better spacing */
+}
+
+.seasons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 100px;
+	grid-row-gap: 10px;
+	margin: 0 5%;
+}
+
+.season_s h1 {
+	margin-left: 4%;
+	padding-top: 2%;
+}
+
+h2 {
+	font-size: 40px;
+	color: var(--clr-ff);
+	font-weight: bold;
+}
+
+.season__call {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+	.seasons {
+		grid-template-columns: repeat(2, 1fr);
+		/* Change to 2 columns */
+		grid-column-gap: 20px;
+		/* Adjust gap between columns */
+	}
+
+	.season__time {
+		margin-bottom: 20px;
+		/* Add margin between items */
+	}
+
+	.season_s h1 {
+		font-size: 24px;
+		/* Decrease font size */
+		margin-left: 0;
+		/* Remove left margin */
+		text-align: center;
+		/* Center align */
+	}
+
+	h2 {
+		font-size: 24px;
+		/* Decrease font size */
+	}
+}
+
+/* Media query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+	/* Add styles for screens between 768px and 1023px if needed */
+}
+
+/* Media query for screens larger than 1023px */
+@media (min-width: 1024px) {
+	/* Add styles for screens larger than 1023px if needed */
+}
+
+
+
 /* videos */
 .video {
 	/* background-color: var(--clr-secondary); */
@@ -225,7 +377,15 @@ h2 {
 	justify-items: center;
 }
 
+/* Media query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+	/* Add styles for screens between 768px and 1023px if needed */
+}
 
+/* Media query for screens larger than 1023px */
+@media (min-width: 1024px) {
+	/* Add styles for screens larger than 1023px if needed */
+}
 
 /* cast */
 
@@ -268,6 +428,24 @@ h2 {
 	border-radius: 50%;
 	margin-right: 1rem;
 	background-color: var(--clr-char-m);
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+	.cast_container {
+		grid-template-columns: repeat(2, 1fr);
+		/* Change to 2 columns */
+	}
+}
+
+/* Media query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+	/* Add styles for screens between 768px and 1023px if needed */
+}
+
+/* Media query for screens larger than 1023px */
+@media (min-width: 1024px) {
+	/* Add styles for screens larger than 1023px if needed */
 }
 
 /* extras */
@@ -372,7 +550,38 @@ h2 {
 	text-align: center;
 }
 
-/* show */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+	.similarsh {
+		grid-template-columns: repeat(2, 1fr);
+		/* Change to 2 columns */
+	}
+
+	container__shows {
+		background-color: var(--clr-extra);
+		border-radius: 20px;
+		height: 60px;
+		width: 77px;
+		margin-bottom: 12%;
+		display: flex;
+		justify-items: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.similar-show h1 {
+		font-size: 0.8rem;
+		margin-left: 2%;
+		padding-top: 2%;
+		margin-top: 0;
+		background-color: var(--clr-primary);
+	}
+}
+
+
+
+/* footer */
 
 
 .show {
@@ -426,6 +635,32 @@ h2 {
 	margin-top: 15px;
 	text-align: center;
 	align-items: center;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+
+	.show,
+	.developer {
+		margin-bottom: 20px;
+		/* Increase bottom margin for better spacing */
+	}
+
+	.show h2,
+	.developer h2 {
+		font-size: 18px;
+		/* Decrease font size for better readability */
+	}
+
+	.contv {
+		flex-direction: column;
+		/* Stack elements vertically */
+	}
+
+	.website-counter {
+		margin-top: 10px;
+		/* Adjust margin for better spacing */
+	}
 }
 
 /* reset */
