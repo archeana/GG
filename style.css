@@ -103,6 +103,23 @@ nav ul li a:hover {
 	border-radius: 4px;
 }
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+	#topBtn {
+		bottom: 10px;
+		/* Adjust the bottom position */
+
+		margin: 0 auto;
+		/* Center the button horizontally */
+		transform: translateX(50%);
+		/* Adjust the button's horizontal position */
+		font-size: 16px;
+		/* Adjust the font size */
+		padding: 10px;
+		/* Adjust the padding */
+	}
+}
+
 
 /* hero */
 .hero {
@@ -121,9 +138,12 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-	font-size: 5rem;
-	margin-top: 50%;
+	font-size: 4.9rem;
+	margin-top: 40%;
 	letter-spacing: 25px;
+	text-shadow: 1px 1px 2px black,
+    0 0 1em blue,
+    0 0 0.2em blue;
 }
 
 .container .ratings {
@@ -377,14 +397,32 @@ h2 {
 	justify-items: center;
 }
 
-/* Media query for screens between 768px and 1023px */
-@media (min-width: 768px) and (max-width: 1023px) {
-	/* Add styles for screens between 768px and 1023px if needed */
+.videos {
+	position: relative;
+	margin:2%;	/* Make sure the container fills its parent */
 }
 
-/* Media query for screens larger than 1023px */
-@media (min-width: 1024px) {
-	/* Add styles for screens larger than 1023px if needed */
+.container_video {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin:2%;
+	/* Aspect ratio (16:9) for responsive videos */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+	.videos {
+		grid-template-columns: repeat(1, 1fr);
+		/* Change to single column layout */
+	}
+
+	.container_video {
+		padding: 10%;
+		display: flex;
+		white-space: nowrap;
+		/* Adjust aspect ratio for smaller screens */
+	}
 }
 
 /* cast */
@@ -509,6 +547,40 @@ h2 {
 
 }
 
+/* For screens smaller than 768px (typical mobile devices) */
+@media (max-width: 767px) {
+	.row {
+		grid-template-columns: repeat(2, 1fr);
+		/* Change to single column layout */
+	}
+
+	.card__extra {
+		width: 80%;
+		/* Adjust width to fit the smaller screen */
+		margin: 20px auto;
+		/* Center the cards */
+	}
+
+	.card-extraimage-container {
+		width: 100%;
+		/* Make the image container full width */
+	}
+
+	.card-extraimage-container img {
+		width: 100%;
+		/* Make the image fill its container */
+		height: auto;
+		/* Maintain aspect ratio */
+	}
+
+	.card-content a {
+		margin-left: auto;
+		/* Align the link to the right */
+		margin-right: 10px;
+		/* Add some space between the text and the link */
+	}
+}
+
 /* similar shows */
 
 .similar-show {
@@ -556,30 +628,32 @@ h2 {
 	.similarsh {
 		grid-template-columns: repeat(2, 1fr);
 		/* Change to 2 columns */
+		grid-column-gap: 5px;
+		/* Reduce the gap between columns */
 	}
 
-	container__shows {
-		background-color: var(--clr-extra);
-		border-radius: 20px;
-		height: 60px;
-		width: 77px;
-		margin-bottom: 12%;
-		display: flex;
-		justify-items: center;
-		justify-content: center;
-		align-items: center;
+	.container__shows {
+		height: 100px;
+		/* Adjust the height */
+		width: 120px;
+		/* Adjust the width */
+		margin-bottom: 5%;
+		/* Reduce the margin */
+		font-size: 0.8rem;
 	}
 
 	.similar-show h1 {
-		font-size: 0.8rem;
+		font-size: 1.2rem;
+		/* Adjust the font size */
 		margin-left: 2%;
+		/* Adjust the left margin */
 		padding-top: 2%;
 		margin-top: 0;
 		background-color: var(--clr-primary);
+		text-align: center;
+		/* Center the heading */
 	}
 }
-
-
 
 /* footer */
 
