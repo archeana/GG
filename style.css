@@ -582,7 +582,9 @@ h2 {
 	flex-direction: row;
 	gap: 10px;
 	flex-wrap: wrap;
+	justify-content: center;
 }
+
 
 .card-extraimage-container {
 	background-color: white;
@@ -667,7 +669,7 @@ h2 {
 	border-radius: 20px;
 	height: 120px;
 	width: 187px;
-	margin-bottom: 12%;
+	margin-bottom: 2%;
 	display: flex;
 	justify-items: center;
 	justify-content: center;
