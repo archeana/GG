@@ -48,4 +48,4 @@ I just used the challenge to train my coding skills. I did not submit my project
 
 ## Author
 
-- Website - [Ana Jesus](hhttps://anajesus.netlify.app/)
+- Website: [Ana Jesus](https://anajesus.netlify.app/)
