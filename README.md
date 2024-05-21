@@ -1,6 +1,6 @@
 # SheCodes Challenges - 📺 Binge-Worthy TV Shows Challenge
 
-This my take on the [📺 Binge-Worthy TV Shows Challenge](https://www.shecodes.io/contests/binge-worthy-tv-show/results). I join the monthly challenges to practise my coding skills!
+This is my take on the [📺 Binge-Worthy TV Shows Challenge](https://www.shecodes.io/contests/binge-worthy-tv-show/results). I join the monthly challenges to practise my coding skills!
 
 ## Table of contents
 
@@ -32,7 +32,7 @@ Include some different elements (e.g. text, buttons, and links) that make your l
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://archeana.github.io/GG/)
+- Live Site URL: [GG](https://archeana.github.io/GG/)
 
 ## My process
 
@@ -44,7 +44,7 @@ Include some different elements (e.g. text, buttons, and links) that make your l
 - CSS Grid
 - Mobile responsive
   
-I just used the challenge to train my coding skills. I did not really submit my project to the shecodes website.
+I just used the challenge to train my coding skills. I did not submit my project to the Shecodes website.
 
 ## Author
 
