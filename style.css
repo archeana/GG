@@ -437,6 +437,7 @@ h2 {
 	justify-content: space-around;
 }
 
+
 /* Media query for screens smaller than 768px */
 @media (max-width: 767px) {
 	.seasons {
